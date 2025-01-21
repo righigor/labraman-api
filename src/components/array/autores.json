@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_array_autores",
+  "info": {
+    "displayName": "autores",
+    "icon": "message",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

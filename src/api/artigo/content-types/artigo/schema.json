@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artigos",
+  "info": {
+    "singularName": "artigo",
+    "pluralName": "artigos",
+    "displayName": "Artigo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "resumo": {
+      "type": "text",
+      "required": true
+    },
+    "autores": {
+      "displayName": "autores",
+      "type": "component",
+      "repeatable": true,
+      "component": "array.autores",
+      "required": true
+    },
+    "fotos": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "linkPublicacao": {
+      "type": "string",
+      "required": true
+    },
+    "tituloEN": {
+      "type": "string",
+      "default": "titulo em ingles",
+      "required": true
+    },
+    "resumoEN": {
+      "type": "text",
+      "required": true,
+      "default": "resumo em ingles"
+    }
+  }
+}

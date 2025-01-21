@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipes",
+  "info": {
+    "singularName": "equipe",
+    "pluralName": "equipes",
+    "displayName": "Equipe",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "tituloCargo": {
+      "type": "string",
+      "required": true
+    },
+    "tituloCargoEN": {
+      "type": "string",
+      "required": true,
+      "default": "titulo/cargo em ingles"
+    },
+    "bio": {
+      "type": "text",
+      "required": true
+    },
+    "bioEN": {
+      "type": "text",
+      "default": "bio em ingles"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "areaAtuacao": {
+      "type": "text"
+    },
+    "areaAtuacaoEN": {
+      "type": "text",
+      "default": "area de atuacao em ingles",
+      "required": true
+    },
+    "telefone": {
+      "type": "string",
+      "default": "+xx (xx) xxxxx-xxxx"
+    },
+    "cargo": {
+      "type": "enumeration",
+      "enum": [
+        "professor",
+        "professor_convidado",
+        "estudante"
+      ],
+      "required": true
+    },
+    "nivelEstudo": {
+      "type": "enumeration",
+      "enum": [
+        "graduação",
+        "mestrado",
+        "doutorado"
+      ]
+    },
+    "lattes": {
+      "type": "string"
+    },
+    "orcid": {
+      "type": "string"
+    },
+    "email": {
+      "type": "component",
+      "repeatable": true,
+      "component": "array.email"
+    }
+  }
+}

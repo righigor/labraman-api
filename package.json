@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.6.0",
+    "@strapi/plugin-documentation": "^5.6.0",
     "@strapi/plugin-users-permissions": "5.6.0",
     "@strapi/strapi": "5.6.0",
     "better-sqlite3": "11.3.0",
@@ -21,6 +22,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "strapi-plugin-gen-types": "^0.0.14",
+    "strapi-plugin-webp-converter": "^1.0.3",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
